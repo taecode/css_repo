@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 70%;
+            border: 4px solid #000;
+            padding: 20px;
+            display: flex;
+
+            /* flex-direction: row;
+            flex-wrap: wrap; */
+            flex-flow: row wrap; /*한번에 처리*/
+            
+        }
+        .item {
+            width: 25%;
+            height: 100px;  
+            border: 4px dashed red;
+
+            /*border 나 padding으로 가로세로가 커지는 거 방지*/
+            box-sizing: border-box;
+
+            border-radius: 10px;
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+    </div>
+
+
+</body>
+</html>
